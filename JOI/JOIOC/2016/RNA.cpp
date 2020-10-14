@@ -4,6 +4,7 @@ Main Idea:
 Find all the strings that satisfy the second condition with binary search, then put them on a segment tree of vectors and binary search for the ones that satisfy the first 
 condition. Pretty sure you need recursive segtree to pass memory limit. 
 
+
 */
 
 #include <bits/stdc++.h>
