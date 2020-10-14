@@ -107,4 +107,5 @@ int32_t main(){
 		cout << seg.query(lba[i], uba[i]) << nl;
 	}
     return 0;
+    
 }
