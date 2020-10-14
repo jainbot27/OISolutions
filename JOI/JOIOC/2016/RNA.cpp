@@ -83,7 +83,7 @@ int32_t main(){
 		lba[i] = lower_bound(s, s+n, p[i])- s;
 		p[i].back()++;
 		uba[i] = lower_bound(s, s+n, p[i]) -s;
-    }
+        }
 	F0R(i, n){
 		reverse(all(s[i]));
 		tot.pb({s[i], i});
@@ -106,6 +106,6 @@ int32_t main(){
 		LB = lbb[i], RB = ubb[i];
 		cout << seg.query(lba[i], uba[i]) << nl;
 	}
-    return 0;
+        return 0;
     
 }
