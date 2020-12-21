@@ -1,3 +1,15 @@
+/*
+Had to read editorial.
+
+Key observation is that you need k cows with sum <= k for a certain cow to never reach, and that the function of this working is binary searchable.
+
+Thinking time: 30 minutes
+Editorial understanding time: 15 minutes
+Impl time: 10 minutes:
+
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
