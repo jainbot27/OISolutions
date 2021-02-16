@@ -3,7 +3,7 @@
 Connect all the ones together and makes sure they dont have a 2 among them. Then connect all the 2s together to the root of every 1 tree. Make sure we didn't override any 0's.
 
 3's are irrelevant. 
-/*
+*/
 #include <bits/stdc++.h>
 #include "supertrees.h"
 using namespace std;
