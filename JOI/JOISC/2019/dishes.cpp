@@ -1,3 +1,28 @@
+/*
+
+solution main idea: if for each node A, we consider, what is the most B we can get away with taking while still getting the points for A, we get a bunch of pairs
+
+(i, low[i]) blue vertices
+
+we can do same thing for ms too
+
+(low[j], j) red vertices
+
+once we have that, consider any path to the node (n, m), it will consist of taking some of these nodes, because those are the points we want
+we have to take some path with some positive slope, and we can hit multiple vertices on the way.
+Now lets consider that for some path we take, all blue vertices above our path, we can get the points for.
+For red, it would be all the nodes below our path. 
+
+Solving for this (apparently is theoretically possible) but there is a reduction to just blue vertices,
+make a red vertex (x, y) into a blue vertex(x-1, y+1) and add the value of that blue vertex to the answer before, and then once we do that, we can consider whether we will
+remove that value or not.
+
+Thus we use a lazy segment tree with range add, point max updates and query range max.
+
+O((n+m)log(n+m))
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
  
