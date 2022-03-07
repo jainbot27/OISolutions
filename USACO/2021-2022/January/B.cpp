@@ -211,6 +211,7 @@ void solve() {
                 }
                 if (!okay) break;
             } else {
+
                 dp = vector<mint>(1, accumulate(dp.begin(), dp.end(), mint(0))); 
                 force = 1; 
                 bool okay = 0; 
